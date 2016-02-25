@@ -18,7 +18,7 @@ public class JavaRunCOmmand
              
         // run the Unix "ps -ef" command
             // using the Runtime exec method:
-            Process p = Runtime.getRuntime().exec("ps -a");
+            Process p = Runtime.getRuntime().exec("lol");
              
             BufferedReader stdInput = new BufferedReader(new
                  InputStreamReader(p.getInputStream()));
@@ -43,8 +43,10 @@ public class JavaRunCOmmand
         catch (IOException e) {
             System.out.println("exception happened - here's what I know: ");
             e.printStackTrace();
-            System.exit(-1);
+            //System.exit(-1);
         }
+        
+        System.out.println("I am still working");
 	}
 
 }
